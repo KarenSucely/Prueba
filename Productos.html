@@ -7,9 +7,26 @@
 	<link rel="stylesheet"  href="EstiloP.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>PRODUCTOS</title>
-	<link rel="stylesheet"  href="Menu.js">
+
 	 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
+	$(document).ready(main);  //Ejecutar la funcion main
+	var contador = 1;
+	function main() {
+	$('.Menu_bar').click(function(){
+		if (contador==1) {
+			$('nav').animate({
+				left: '0'
+			});
+			contador=0;
+		}else{
+			contador=1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+	});
+	};
 	//draggable = "true" --> Elemento pueda moverse
       //ondrastar --> llama a la funcion drop(event)
       //ondragover --> llama a la funcion allowDrop(event)
