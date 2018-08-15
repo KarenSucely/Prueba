@@ -1,6 +1,9 @@
 $(document).ready(main);  //Ejecutar la funcion main
 var contador = 1;
 function main() {
+	allowDrop(ev);
+	drop(ev);
+	allowDrop(ev);
 	$('.Menu_bar').click(function(){
 		if (contador==1) {
 			$('nav').animate({
