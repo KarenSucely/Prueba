@@ -1,3 +1,11 @@
+#wrapper{
+	width: 1350px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
 *{
 	margin: 0;
 	padding:0;
@@ -73,7 +81,11 @@ footer nav img{
 	width: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
+	#wrapper{
+		width: 100%;
+	}
+
 	header nav {
 		width: 60%;	
 		height: 100%;
@@ -106,4 +118,43 @@ footer nav img{
 
 	}
 	
+}
+
+
+@media screen and (max-width: 480px) {
+	#wrapper{
+		width: 100%;
+	}
+
+	header nav {
+		width: 60%;	
+		height: 100%;
+		left:-100%;
+		margin: 0;
+		position: fixed;
+	}
+	header nav ul li{
+		display:block; /*Toma todo el ancho*/
+		float:none;  /*No coloca en horizontal los iconos*/
+		border-bottom:1px solid rgba(255,255,255, .3); /*Lineas de borde entre iconos*/
+	}
+	.Menu_bar{
+		display:block;
+		width: 100%;
+		background: #024959;
+		
+	}
+	.Menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background: #024959;
+		color: white; /*Color de letra*/
+		text-decoration:none;
+		font-weight: bold;	
+
+	}
+	.Menu_bar span {
+		float: right;
+
+	}
 }
